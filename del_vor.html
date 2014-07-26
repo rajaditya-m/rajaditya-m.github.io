@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delaunay </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/oracle.css">
+  <!-- Google Font APIS -->
+  <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!-- jquery -->
+  <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+
+</head>
+<body>
+
+  <p>&nbsp;</p>
+
+  <div class="row-fluid">
+
+
+    <div class="span10 offset1">
+
+
+      <div class="row-fluid"> 
+
+        <div class="span3">
+          <p>
+            <img src="img/rajaditya.jpg" class="img-rounded" width="275" height="300" alt="Rajaditya Mukherjee">
+          </p>
+        </div>
+
+
+        <div class="span6">
+
+          <div>
+            <span class="fname">Rajaditya</span>  <span class="sname">Mukherjee</span>
+          </div>
+
+          <br>
+
+          <div>
+            <span class="gentext">raj [at] rajaditya [dot] com &nbsp;&bull;&nbsp;&nbsp;</span><a href="files/cv_rdm.pdf" class="genlink">cv</a>
+          </div>
+
+          <br>
+
+          <div> 
+            <span class="gentexts"> I'm a PhD candidate in the <a href="http://www.cse.ohio-state.edu/">Department of Computer Science and Engineering</a> at <a href="http://www.osu.edu/">The Ohio State University</a>, working with <a href="http://www.cse.ohio-state.edu/~whmin/">Prof. Huamin Wang</a>. My research focuses on physically based simulation and object modelling.</span>
+          </div>
+ 
+          <p>&nbsp;</p>
+
+
+          <div>
+             <span class="gentexts">  <a href="http://www.cse.ohio-state.edu/~mukherjr/">HOMEPAGE</a>.
+          </div>
+
+
+        </div>
+
+
+        <div class="span3">  
+          <div><span class="genheader">NEWS</span></div>
+          <ul>
+            <li><span class="gentexts">Qualified by Acceleration Option. </span></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <div><span class="genheader">THEORY</span></div>
+
+      <p>&nbsp;</p>  
+
+      <p> <span class="gentexts"> A triangulation of a set of point is defined as a maximal planar subdivision whose vertex set is same as the point set. A Delaunay Triangulation is one such triangulation but
+      with the special property that no point in the point set is inside the circumcenter of any of the triangles of the triangulation. Delaunay triangles have a special property that they tend to maximize the minimum angles of all the triangles in the triangulation and so they tend to avoid skinny triangles. This property makes it useful for a bunch of applications in reconstruction and sampling of point clouds, etc. 
+      </span> </p>
+
+      <p> <span class="gentexts"> Bezier curves and B-Splines are some of the most fundamental types of curves used in geometric modelling. Their usage is widespread. 
+      </span> </p>
+
+
+      <!-- p> <span class="gentexts"> Wafer candy canes cake liquorice gummies. Muffin marzipan candy ice cream danish. Apple pie marshmallow chocolate bar icing tiramisu. Chocolate pastry carrot cake powder cotton candy sugar plum. Chocolate bar soufflé chocolate jelly beans cake muffin liquorice marzipan candy canes. Jelly jelly-o toffee unerdwear.com wafer. Pastry candy marzipan tiramisu lollipop caramels. Powder donut jelly-o cake jujubes ice cream gummi bears. Icing ice cream pastry bear claw bear claw applicake tootsie roll. Gummies cookie danish. </span> </p>
+ -->
+      <p>&nbsp;</p>
+
+      <div><span class="genheader">IMPLEMENTATION</span></div>
+
+      <p>&nbsp;</p>
+
+      <p> <span class="gentexts"> I have used the incremental algorithm of Bowyer-Watson for Delaunay Triangulation. You can read more details about this algorithm in <a href="http://www.newcastle.edu.au/Resources/Research%20Centres/CGMM/Publications/Scott%20Sloan/An%20implementation%20of%20Watsons%20algorithm%20for%20computing%20two-dimensional%20Delaunay%20triangulations.pdf">here</a>. 
+      </span> </p>
+
+      <p> <span class="gentexts"> I have used the deCasteljau subdivision algorithm for Bezier Curve. You can read more details about this algorithm in <a href="http://en.wikipedia.org/wiki/De_Casteljau's_algorithm">here</a>. 
+      </span> </p>
+
+      <p> <span class="gentexts"> Standard Matrix based multiplication was used for the generation of the uniform Cubic B-Spline curve.</a>. 
+      </span> </p>
+
+
+      <p> <span class="gentexts"> For drawing the figures on your webbrowser, I have used the Canvas Element in HTML5 standard. For all the buttons and everything, I have used the default button class and alert notifications available in Bootstrap. Also the event handlers for mouse is using JQuery Cross-browser Javascript Library.
+
+    <!--   <p> <span class="gentexts"> Wafer candy canes cake liquorice gummies. Muffin marzipan candy ice cream danish. Apple pie marshmallow chocolate bar icing tiramisu. Chocolate pastry carrot cake powder cotton candy sugar plum. Chocolate bar soufflé chocolate jelly beans cake muffin liquorice marzipan candy canes. Jelly jelly-o toffee unerdwear.com wafer. Pastry candy marzipan tiramisu lollipop caramels. Powder donut jelly-o cake jujubes ice cream gummi bears. Icing ice cream pastry bear claw bear claw applicake tootsie roll. Gummies cookie danish. 
+      </span> </p> -->
+
+      <p>&nbsp;</p>
+
+      <div><span class="genheader">RESULTS</span></div>
+
+      <p>&nbsp;</p>
+
+      <div class = "row-fluid">
+
+        <div class ="span5">
+          <canvas id="canvas" width="400" height="300" style="border:1px solid #d3d3d3" ></canvas>
+        </div>
+
+        <div class ="span2">
+          <div id="reset_button"><button type="button" class="btn btn-default button_cust">Reset</button></div>
+          <p>&nbsp;</p>
+          <!-- <div id="vor_button"><button type="button" class="btn btn-default button_cust">Voronoi</button></div>
+          <p>&nbsp;</p> -->
+          <div id="del_button"><button type="button" class="btn btn-default button_cust">Delaunay</button></div>
+          <p>&nbsp;</p>
+          <div id="bez_button"><button type="button" class="btn btn-default button_cust">Bezier Curve</button></div>
+          <p>&nbsp;</p>
+          <div id="bsp_button"><button type="button" class="btn btn-default button_cust">Cubic B-Spline</button></div>
+          <p>&nbsp;</p>
+          <input type="checkbox" id="icpgen_true"/>
+          <label for="icpgen_true" class="gentexts">Draw Control Polygon</label>
+          <p>&nbsp;</p>
+          <div class="alert alert-info"><div id="nospoints">Number of Points : <span></span></div></div>
+        </div>
+
+        <div class ="span5">
+          <p> <span class="gentexts"> Usage is very simple. Just click on the Canvas area to select the points. Then press the appropriate button to get the triangulation. I am still trying to iron out some possible issues with the implementation so you may have some problems when you are using points that are nearly collinear. Hope I can resolve this issue soon. 
+      </span> </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/geom.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+body 
+{
+	background-color:#404040;
+}
+
+p
+{
+	font-family:"Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+a {
+color: #8BB658;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+ul
+{
+	list-style-type: circle;
+	color: #FFFFFF;
+}
+
+.fname {
+	color: #F3E7B5;
+    font-family: 'Bree Serif', serif;
+    font-size:250%;
+}
+
+.sname{
+	color: #FFCCCC;
+    font-family: 'Bree Serif', serif;
+    font-size:250%;
+}
+
+.genheader{
+	color: #F3E7B5;
+    font-family: 'Bree Serif', serif;
+    font-size: 150%
+}
+
+.gentext{
+	font-family: 'Josefin Slab', serif;
+	color:#FFFFFF;
+	font-size: 150%;
+	text-align: justify;
+}
+
+.genheader2{
+	font-family: 'Josefin Slab', serif;
+	color:#FFFFFF;
+	font-size: 120%;
+}
+
+.gentexts{
+	font-family: 'Josefin Slab', serif;
+	color:#FFFFFF;
+	font-size: 125%;
+	text-align: justify;
+}
+
+.genlink{
+	font-family: 'Josefin Slab', serif;
+	font-size: 150%
+}
+
+.button_cust
+{
+	width:120px !important;
+}
+
+#canvas {
+	background-color: #FFFFFF;
+}
