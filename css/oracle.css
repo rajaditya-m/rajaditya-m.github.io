@@ -1,4 +1,4 @@
-body 
+body
 {
 	background-color:#404040;
 }
@@ -21,6 +21,11 @@ a:active {
 }
 a:hover {
     text-decoration: underline;
+}
+a.paperlnk{
+	color: #FFCCCC;
+		font-family: 'Bree Serif', serif;
+		font-size: 100%
 }
 
 ul
@@ -45,6 +50,12 @@ ul
 	color: #F3E7B5;
     font-family: 'Bree Serif', serif;
     font-size: 150%
+}
+
+.paperlink{
+	color: #FFCCCC;
+    font-family: 'Bree Serif', serif;
+    font-size: 125%
 }
 
 .gentext{

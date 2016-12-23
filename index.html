@@ -38,7 +38,7 @@
           <br>
 
           <div>
-            <span class="gentext">raj [at] rajaditya [dot] com &nbsp;&bull;&nbsp;&nbsp;</span><a href="files/cv_rdm.pdf" class="genlink">Resume</a>
+            <span class="gentext">raj [at] rajaditya [dot] com &nbsp;&bull;&nbsp;&nbsp;</span><a href="files/cv_rdm.pdf" class="genlink">Resume</a> <span class="gentext">&nbsp;&bull;&nbsp;&nbsp;</span> <a href="https://github.com/rajaditya-m" class="genlink">Github</a> <span class="gentext">&nbsp;&bull;&nbsp;&nbsp;</span> <a href="https://www.linkedin.com/in/rajaditya" class="genlink">LinkedIn</a>
           </div>
 
           <br>
@@ -80,21 +80,75 @@
 
     <p>&nbsp;</p>
 
-    <div><span class="genheader">SALIENT PROJECTS</span></div>
+    <div><span class="genheader">RESEARCH PROJECTS</span></div>
     <p>&nbsp;</p>
 
     <div class="media">
-  <a class="pull-left" href="#">
-    <img src="img/face_5545.png" class="img-circle" width="80" height="80">
-  </a>
-  <div class="media-body">
-    <h4 class="media-heading"><span class="genheader2"><a href="https://github.com/micahdlamb/Face">Realistic Human Skin Rendering (CSE 5545)</a></span></h4>
-    <p><span class="gentexts">For any realistic rendering of human skin, we must select a good BRDF (Bidirectional Reflectance Distribution Function) and an approximation to the phenomena of Subsurface Scattering. For this project, we followed the approach outlined in this <a href="http://http.developer.nvidia.com/GPUGems3/gpugems3_ch14.html">NVIDIA tutorial</a>. We approximated the subsurface scattering as a sum of gaussians and selected the Kelemen and Szirmay-Kalos analytic BRDF to get the results.  </span></p>
+    <a class="pull-left" href="#">
+    <img src="img/Mukherjee-2016-IDS_small.png" class="img-square" width="80" height="80">
+    </a>
+    <div class="media-body">
+    <h4 class="media-heading"><span class="genheader2"><a href="https://diglib.eg.org/handle/10.1111/cgf13014">Incremental Deformation Subspace Reconstruction</a></span></h4>
+    <p><div class="paperlink"><a class = "paperlnk" href="files/Mukherjee-2016-IDS.pdf">Preprint</a>&nbsp;&bull;&nbsp;&nbsp;<a class = "paperlnk" href="http://web.cse.ohio-state.edu/~whmin/Mukherjee-2016-IDS/Mukherjee-2016-IDS.mp4">Video</a></div></p>
+    <p><span class="gentexts"><strong>Rajaditya Mukherjee, Xiaofeng Wu, Huamin Wang.</strong> <em>Incremental Deformation Subspace Reconstruction.</em> <strong>Computer Graphics Forum (Pacific Graphics 2016).</strong></span></p>
+    <p><span class="gentexts">Recalculating the subspace basis of a deformable body is a mandatory procedure for subspace simulation, after the body gets
+modified by interactive applications. However, using linear modal analysis to calculate the basis from scratch is known to be
+computationally expensive. In the paper, we show that the subspace of a modified body can be efficiently obtained from the
+subspace of its original version, if mesh changes are small. Our basic idea is to approximate the stiffness matrix by its low-
+frequency component, so we can calculate new linear deformation modes by solving an incremental eigenvalue decomposition
+problem. To further handle nonlinear deformations in the subspace, we present a hybrid approach to calculate modal deriva-
+tives from both new and original linear modes. Finally, we demonstrate that the cubature samples trained for the original mesh
+can be reused in fast reduced force and stiffness matrix evaluation, and we explore the use of our techniques in various sim-
+ulation problems. Our experiment shows that the updated subspace basis still allows a simulator to generate visual plausible
+deformation effects. The whole system is efficient and it is compatible with other subspace construction approaches. </span></p>
+    </div>
+    </div>
+    <p>&nbsp;</p>
+
+    <div class="media">
+    <a class="pull-left" href="#">
+    <img src="img/Wu-2015-AUA_small.png" class="img-square" width="80" height="80">
+    </a>
+    <div class="media-body">
+    <h4 class="media-heading"><span class="genheader2"><a href="http://dl.acm.org/citation.cfm?id=2818065">A unified approach for subspace simulation of deformable bodies in multiple domains.</a></span></h4>
+    <p><div class="paperlink"><a class = "paperlnk" href="files/Wu-2015-A.pdf">Preprint</a>&nbsp;&bull;&nbsp;&nbsp;<a class = "paperlnk" href="http://web.cse.ohio-state.edu/~whmin/Wu-2015-AUA/Wu-2015-AUA.mp4">Video</a></div></p>
+    <p><span class="gentexts"><strong>Xiaofeng Wu, Rajaditya Mukherjee, Huamin Wang.</strong> <em>A unified approach for subspace simulation of deformable bodies in multiple domains.</em> <strong>ACM Transactions on Graphics (SIGGRAPH Asia 2015).</strong></span></p>
+    <p><span class="gentexts">Multi-domain subspace simulation can efficiently and conveniently
+simulate the deformation of a large deformable body, by constrain-
+ing the deformation of each domain into a different subspace. The
+key challenge in implementing this method is how to handle the
+coupling among multiple deformable domains, so that the overall
+effect is free of gap or locking issues. In this paper, we present a
+new domain decomposition framework that connects two disjoint
+domains through coupling elements. Under this framework, we
+present a unified simulation system that solves subspace deforma-
+tions and rigid motions of all of the domains by a single linear solve.
+Since the coupling elements are part of the deformable body, their
+elastic properties are the same as the rest of the body and our system
+does not need stiffness parameter tuning. To quickly evaluate the
+reduced elastic forces and their Jacobian matrices caused by the
+coupling elements, we further develop two cubature optimization
+schemes using uniform and non-uniform cubature weights. Our
+experiment shows that the whole system can efficiently handle large
+and complex scenes, many of which cannot be easily simulated by
+previous techniques without limitations. </span></p>
+    </div>
+    </div>
+    <p>&nbsp;</p>
+    <div><span class="genheader">OTHER PROJECTS</span></div>
+    <p>&nbsp;</p>
+
+    <div class="media">
+    <a class="pull-left" href="#">
+    <img src="img/darkmatter.PNG" class="img-circle" width="80" height="80">
+    </a>
+    <div class="media-body">
+    <h4 class="media-heading"><span class="genheader2"><a href="http://ieeexplore.ieee.org/document/7429498/?reload=true">Visualizing the life and anatomy of dark matter</a></span></h4>
+    <p><span class="gentexts">We provide a visualization based answer to understanding the evolution and structure of dark matter halos by addressing the tasks assigned in 2015 IEEE Scientific Visualization Contest. The data released this year is a Cosmological Simulation dataset generated from the Dark Sky Simulation experiments. Out of the assigned tasks we are addressing the following: data integration and browsing, halo identification and visualization and diving deep into halo substructure.</span></p>
 
     </div>
-</div>
+    </div>
 
-  <p>&nbsp;</p>
 
        <div class="media">
   <a class="pull-left" href="#">
@@ -129,14 +183,6 @@
            <li><span class="gentexts"> 2011 : UGC Undergraduate Research Scholarship, Jadavpur University  </span></li>
            <li><span class="gentexts"> 2010 : DAAD WISE Scholarship</span></li>
         </ul>
-      </div>
-       <div class="span4">
-    <div><span class="genheader">TEACHING</span></div>
-    <p>&nbsp;</p>
-      <p> <span class="gentexts">Autumn 2014:</span></p>
-      <ul>
-          <li><span class="gentexts"> Lab Instructor, CSE 2111 - Modelling and Problem Solving with Spreadsheets and Databases </span></li>
-      </ul>
       </div>
     </div>
 
